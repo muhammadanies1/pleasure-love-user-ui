@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+
+import { Button } from 'antd';
 import './App.css';
+import { useNavigate } from 'react-router';
 
 function App() {
+
+  const navigate = useNavigate()
+
+  const toCart = () => {
+    navigate('/cart')
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      style={{ display:"flex", flexDirection:"column", width:"100%", gap:"10px", justifyContent:'center' }}
+    >
+      <div>
+        Home
+      </div>
+      <Button type='primary' size='large' onClick={toCart}>
+        Cart
+      </Button>
+      
     </div>
   );
 }
