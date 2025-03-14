@@ -11,8 +11,14 @@ import ProductCSVOG from './products/CSVOG/0599a822-78a5-4dc4-98f0-5e9ebe3cb104.
 import ProductVibratorWireless from './products/vibrator-wanita-wireless/3940379b-7dc1-4990-8a9b-a48b5fe7d474.jpg';
 import LogoPleasureLoveNoBg from './logos/logo-noremove.png';
 import LogoPLoveNoBg from './logos/logo-plove.png';
+import Banners1 from './banners/Mobile-App-Banner-NEW-MB_1024x1024.webp';
+import Banners2 from './banners/RAMADAN_SALE_2025_MAIN_BANNER_1024x1024.webp';
+import Banners3 from './banners/favo_points_1024x1024.webp';
 
 export {
+  Banners3,
+  Banners2,
+  Banners1,
   LogoPLoveNoBg,
   LogoPleasureLoveNoBg,
   ProductVibratorWireless,
