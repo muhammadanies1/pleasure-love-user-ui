@@ -23,6 +23,7 @@ const CustomCarousel = () => {
       <Carousel
         arrows
         infinite={true}
+        autoplay
         prevArrow={<FontAwesomeIcon icon={faCircleChevronLeft} />}
         nextArrow={<FontAwesomeIcon icon={faCircleChevronRight} />}
       >

@@ -3,8 +3,11 @@ import LogoHeader from "./logo-header";
 import SearchHeader from "./search-header";
 import IconUser from "../../atoms/icon-user";
 import IconCart from "../../atoms/icon-cart";
+import useDrawerCart from "../../../stores/useDrawerCart";
 
 const Header = () => {
+  const { open } = useDrawerCart();
+
   return (
     <div
       style={{
@@ -33,7 +36,7 @@ const Header = () => {
         }}
       >
         <IconUser />
-        <IconCart />
+        <IconCart onClick={open} />
       </div>
     </div>
   );

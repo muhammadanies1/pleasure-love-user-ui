@@ -2,6 +2,8 @@ import React from "react";
 import Header from "../components/molecules/headers";
 import Footer from "../components/molecules/footer";
 import CustomCarousel from "../components/molecules/carousel";
+import Marketplace from "../components/organisms/content-marketplaces";
+import CustomDrawer from "../components/molecules/drawer";
 
 const Main = () => {
   return (
@@ -31,10 +33,11 @@ const Main = () => {
           }}
         >
           <CustomCarousel />
+          <Marketplace />
         </div>
-        Content
       </div>
       <Footer />
+      <CustomDrawer />
     </div>
   );
 };
