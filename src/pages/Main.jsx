@@ -1,4 +1,4 @@
-import { Button, Image } from "antd";
+import { Button } from "antd";
 import React from "react";
 
 const Main = () => {
@@ -21,16 +21,7 @@ const Main = () => {
         }}
       >
         <div>Coba Yah</div>
-        <div>
-          <Image
-            alt="gambar-produk"
-            src={
-              "../assets/products/vibrator-wanita-wireless/9ba6ca66-df23-4df7-86da-f2c45ad00d9d.jpg"
-            }
-            width={500}
-            height={500}
-          />
-        </div>
+
         <Button type="primary">Primary</Button>
       </div>
     </div>

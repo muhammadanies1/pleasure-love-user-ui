@@ -1,7 +1,7 @@
 const AntdThemesConfig = {
   "token": {
-    "colorPrimary": "#06965f",
-    "colorInfo": "#06965f"
+    "colorPrimary": "#afd1d2",
+    "colorInfo": "#afd1d2"
   }
 }
 
