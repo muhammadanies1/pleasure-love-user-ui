@@ -1,7 +1,7 @@
 import { Image } from "antd";
 import React from "react";
 
-const ProductItemsCard = ({ imageSrc, name, price }) => {
+const ProductItemsCard = ({ imageSrc, name, price, onClick }) => {
   return (
     <div
       style={{
@@ -11,6 +11,7 @@ const ProductItemsCard = ({ imageSrc, name, price }) => {
         gap: "10px",
         cursor: "pointer",
       }}
+      onClick={onClick ? onClick : undefined}
     >
       <div
         style={{

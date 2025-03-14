@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useCallback } from "react";
 import ProductItemsCard from "../../molecules/products-card";
 import { ProductAPDS, ProductAPFP, ProductAVST } from "../../../assets";
+import { useNavigate } from "react-router";
 
 const Marketplace = () => {
+  const navigate = useNavigate();
+
+  const toDetail = useCallback(() => {
+    navigate("/products/detail");
+  }, [navigate]);
+
   return (
     <div
       style={{
@@ -64,6 +71,7 @@ const Marketplace = () => {
             imageSrc={ProductAPDS}
             name={"Anal Plug Diamond Aluminium Safe for Play"}
             price={"24.900"}
+            onClick={toDetail}
           />
           <ProductItemsCard
             imageSrc={ProductAPFP}
