@@ -10,8 +10,10 @@ import ProductCLJV from './products/CLJV/39061db4-8dd0-4d98-891d-7de72435306b.jp
 import ProductCSVOG from './products/CSVOG/0599a822-78a5-4dc4-98f0-5e9ebe3cb104.jpg';
 import ProductVibratorWireless from './products/vibrator-wanita-wireless/3940379b-7dc1-4990-8a9b-a48b5fe7d474.jpg';
 import LogoPleasureLoveNoBg from './logos/logo-noremove.png';
+import LogoPLoveNoBg from './logos/logo-plove.png';
 
 export {
+  LogoPLoveNoBg,
   LogoPleasureLoveNoBg,
   ProductVibratorWireless,
   ProductCSVOG,

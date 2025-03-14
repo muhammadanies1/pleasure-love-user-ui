@@ -1,5 +1,6 @@
-import { Button } from "antd";
 import React from "react";
+import Header from "../components/molecules/headers";
+import Footer from "../components/molecules/footer";
 
 const Main = () => {
   return (
@@ -8,22 +9,18 @@ const Main = () => {
         display: "flex",
         flexDirection: "column",
         width: "100%",
-        padding: "5px",
-        justifyContent: "center",
-        alignItems: "center",
+        height: "100vh",
       }}
     >
+      <Header />
       <div
         style={{
-          display: "flex",
-          flexDirection: "column",
-          width: "300px",
+          height: "85vh",
         }}
       >
-        <div>Coba Yah</div>
-
-        <Button type="primary">Primary</Button>
+        Content
       </div>
+      <Footer />
     </div>
   );
 };
