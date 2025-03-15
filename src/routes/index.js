@@ -16,7 +16,7 @@ const BrowserRoutes = createBrowserRouter([
   {
     path:ROUTING.PRODUCTS.DETAIL,
     element:<ProductDetails />
-  }
-]);
+  },
+], { basename: "/" });
 
 export default BrowserRoutes;
