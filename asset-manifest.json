@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.12aad647.css",
+    "main.js": "/static/js/main.6fcb6d0c.js",
+    "static/js/453.763854f1.chunk.js": "/static/js/453.763854f1.chunk.js",
+    "static/media/logo-plove.png": "/static/media/logo-plove.e251b274f787096c2f3f.png",
+    "static/media/logo.png": "/static/media/logo.1413ca03cbab8c4d3378.png",
+    "static/media/032e154e-ac48-4018-bdf0-36aeff58d52b.jpg": "/static/media/032e154e-ac48-4018-bdf0-36aeff58d52b.8da86e719d4f2c76cb0c.jpg",
+    "static/media/015b3385-d2bb-4071-af47-eba6c23cce29.jpg": "/static/media/015b3385-d2bb-4071-af47-eba6c23cce29.ebfb03b9c2bbdedec0ef.jpg",
+    "static/media/39061db4-8dd0-4d98-891d-7de72435306b.jpg": "/static/media/39061db4-8dd0-4d98-891d-7de72435306b.2b7ee4e7efea18aa5ff0.jpg",
+    "static/media/3dd46d8f-c584-4375-9cdb-4960e1973ae8.jpg": "/static/media/3dd46d8f-c584-4375-9cdb-4960e1973ae8.47ca14ed7c9f00f1d3e4.jpg",
+    "static/media/RAMADAN_SALE_2025_MAIN_BANNER_1024x1024.webp": "/static/media/RAMADAN_SALE_2025_MAIN_BANNER_1024x1024.a7bacbc61bbaaadab0d3.webp",
+    "static/media/292ec182-de49-4504-9681-e60f9a500041.jpg": "/static/media/292ec182-de49-4504-9681-e60f9a500041.8de7ba21c2819df4e061.jpg",
+    "static/media/3940379b-7dc1-4990-8a9b-a48b5fe7d474.jpg": "/static/media/3940379b-7dc1-4990-8a9b-a48b5fe7d474.2e268d3fb7d6dd9a7117.jpg",
+    "static/media/favo_points_1024x1024.webp": "/static/media/favo_points_1024x1024.42a964a517c27617f46a.webp",
+    "static/media/137c6b90-981b-410f-8343-e0d5c894341f.jpg": "/static/media/137c6b90-981b-410f-8343-e0d5c894341f.2537401e093202219f16.jpg",
+    "static/media/11f3d123-9ea9-4d9a-9346-f294930d4dde.jpg": "/static/media/11f3d123-9ea9-4d9a-9346-f294930d4dde.a9a4f281cf2cf80660d4.jpg",
+    "static/media/logo-noremove.png": "/static/media/logo-noremove.658bbc09525b7f81e2e4.png",
+    "static/media/4d178f99-3385-47cc-8ddd-a1d022b52a7e.jpg": "/static/media/4d178f99-3385-47cc-8ddd-a1d022b52a7e.c61cfd3712a2240ae59a.jpg",
+    "static/media/Mobile-App-Banner-NEW-MB_1024x1024.webp": "/static/media/Mobile-App-Banner-NEW-MB_1024x1024.24c3b910d35fe7496ec3.webp",
+    "static/media/0599a822-78a5-4dc4-98f0-5e9ebe3cb104.jpg": "/static/media/0599a822-78a5-4dc4-98f0-5e9ebe3cb104.eadd1cfa541e29217203.jpg",
+    "index.html": "/index.html",
+    "main.12aad647.css.map": "/static/css/main.12aad647.css.map",
+    "main.6fcb6d0c.js.map": "/static/js/main.6fcb6d0c.js.map",
+    "453.763854f1.chunk.js.map": "/static/js/453.763854f1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.12aad647.css",
+    "static/js/main.6fcb6d0c.js"
+  ]
+}
