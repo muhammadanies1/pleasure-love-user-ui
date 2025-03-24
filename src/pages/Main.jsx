@@ -1,13 +1,11 @@
 import React from "react";
-import Header from "../components/molecules/headers";
-import Footer from "../components/molecules/footer";
 import TabletCarousel from "../components/molecules/carousel/tablet-carousel";
 import CustomCarousel from "../components/molecules/carousel/laptop-carousel";
+import MainLayouts from "../components/organisms/layouts/main";
 
 const Main = () => {
   return (
-    <div className="flex flex-col min-h-screen">
-      <Header />
+    <MainLayouts>
       <div className="laptop:hidden">
         <TabletCarousel />
       </div>
@@ -16,8 +14,7 @@ const Main = () => {
           <CustomCarousel />
         </div>
       </div>
-      <Footer />
-    </div>
+    </MainLayouts>
   );
 };
 
