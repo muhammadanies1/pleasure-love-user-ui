@@ -1,10 +1,10 @@
 import { Image } from "antd";
 import React, { useCallback } from "react";
-import { LogoPLoveNoBg } from "../../../../assets";
+import { LogoPLoveNoBg } from "../../../../assets/images";
 import { useNavigate } from "react-router";
 import ROUTING from "../../../../constants/routing";
 
-const LogoHeader = () => {
+const LogoHeader = ({ ...attrs }) => {
   const navigate = useNavigate();
 
   const toMain = useCallback(() => {
@@ -12,18 +12,12 @@ const LogoHeader = () => {
   }, [navigate]);
 
   return (
-    <div
-      style={{
-        cursor: "pointer",
-        width: "20%",
-      }}
-      onClick={toMain}
-    >
+    <div onClick={toMain} {...attrs}>
       <Image
         alt="logo-pleasure-love"
         src={LogoPLoveNoBg}
         width={"100%"}
-        height={50}
+        height={45}
         preview={false}
       />
     </div>

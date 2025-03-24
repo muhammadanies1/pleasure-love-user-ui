@@ -1,6 +1,6 @@
 import React, { useCallback } from "react";
 import ProductItemsCard from "../../molecules/products-card";
-import { ProductAPDS, ProductAPFP, ProductAVST } from "../../../assets";
+import { ProductAPDS, ProductAPFP, ProductAVST } from "../../../assets/images";
 import { useNavigate } from "react-router";
 
 const Marketplace = () => {

@@ -1,43 +1,22 @@
 import React from "react";
 import Header from "../components/molecules/headers";
 import Footer from "../components/molecules/footer";
-import CustomCarousel from "../components/molecules/carousel";
-import Marketplace from "../components/organisms/content-marketplaces";
-import CustomDrawer from "../components/molecules/drawer";
+import TabletCarousel from "../components/molecules/carousel/tablet-carousel";
+import CustomCarousel from "../components/molecules/carousel/laptop-carousel";
 
 const Main = () => {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        width: "100%",
-        height: "100vh",
-      }}
-    >
+    <div className="flex flex-col min-h-screen">
       <Header />
-      <div
-        style={{
-          height: "85vh",
-          display: "flex",
-          flexDirection: "column",
-        }}
-      >
-        <div
-          style={{
-            height: "40vh",
-            backgroundColor: "#f3f3f3",
-            paddingLeft: "20%",
-            paddingRight: "20%",
-            paddingTop: "2%",
-          }}
-        >
+      <div className="laptop:hidden">
+        <TabletCarousel />
+      </div>
+      <div className="hidden laptop:block bg-[#f3f3f3] h-[400px] py-12">
+        <div className="px-96">
           <CustomCarousel />
-          <Marketplace />
         </div>
       </div>
       <Footer />
-      <CustomDrawer />
     </div>
   );
 };

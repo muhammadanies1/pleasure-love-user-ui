@@ -1,44 +1,24 @@
 import React from "react";
 import LogoHeader from "./logo-header";
 import SearchHeader from "./search-header";
-import IconUser from "../../atoms/icon-user";
-import IconCart from "../../atoms/icon-cart";
-import useDrawerCart from "../../../stores/useDrawerCart";
+import IconUser from "../../atoms/font-awesome/icon-user";
+import IconCart from "../../atoms/font-awesome/icon-cart";
+import IconMenu from "../../atoms/font-awesome/icon-menu";
+import DrawerMenu from "../drawer/drawer-cart";
+import useDrawerMenu from "../../../stores/useDrawerMenu";
 
 const Header = () => {
-  const { open } = useDrawerCart();
+  const { open } = useDrawerMenu();
 
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "row",
-        height: "10vh",
-        backgroundColor: "#afd1d2",
-        alignItems: "center",
-        paddingLeft: "20%",
-        paddingRight: "20%",
-        width: "100%",
-        gap: "20px",
-      }}
-    >
-      <LogoHeader />
+    <header className="bg-primary flex flex-row h-20 items-center px-5 gap-5 laptop:px-96">
+      <LogoHeader className="hidden laptop:block cursor-pointer" />
       <SearchHeader />
-      <div
-        style={{
-          width: "10%",
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "flex-end",
-          gap: "30px",
-          height: "30px",
-          alignItems: "center",
-        }}
-      >
-        <IconUser />
-        <IconCart onClick={open} />
-      </div>
-    </div>
+      <IconUser className="hidden tablet:block" />
+      <IconCart />
+      <IconMenu className="tablet:hidden" onClick={open} />
+      <DrawerMenu />
+    </header>
   );
 };
 
