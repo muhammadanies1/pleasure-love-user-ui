@@ -3,6 +3,7 @@ import Main from "../pages/Main";
 import Cart from "../pages/carts";
 import ROUTING from "../constants/routing";
 import ProductDetails from "../pages/products/details";
+import Login from "../pages/login";
 
 const BrowserRoutes = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const BrowserRoutes = createBrowserRouter([
     path:ROUTING.PRODUCTS.DETAIL,
     element:<ProductDetails />
   },
+  {
+    path:ROUTING.LOGIN,
+    element: <Login />
+  }
 ], { basename: "/" });
 
 export default BrowserRoutes;

@@ -1,5 +1,6 @@
 const ROUTING = Object.freeze({
   INDEX: "/",
+  LOGIN:"/login",
   CART: {
     LIST: "/cart"
   },
