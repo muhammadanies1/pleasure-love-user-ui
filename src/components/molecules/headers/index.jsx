@@ -6,6 +6,7 @@ import IconCart from "../../atoms/font-awesome/icon-cart";
 import IconMenu from "../../atoms/font-awesome/icon-menu";
 import DrawerMenu from "../drawer/drawer-cart";
 import useDrawerMenu from "../../../stores/useDrawerMenu";
+import { Avatar, Badge } from "antd";
 
 const Header = () => {
   const { open } = useDrawerMenu();
@@ -15,7 +16,9 @@ const Header = () => {
       <LogoHeader className="hidden laptop:block cursor-pointer" />
       <SearchHeader />
       <IconUser className="hidden tablet:block" />
-      <IconCart />
+      <Badge count={5} color="white">
+        <Avatar icon={<IconCart />} style={{ backgroundColor: "#afd1d2" }} />
+      </Badge>
       <IconMenu className="tablet:hidden" onClick={open} />
       <DrawerMenu />
     </header>

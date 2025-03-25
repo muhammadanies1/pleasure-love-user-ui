@@ -1,6 +1,9 @@
 import React from "react";
 import Header from "../../../molecules/headers";
 import Footer from "../../../molecules/footer";
+import { FloatButton } from "antd";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 const MainLayouts = ({ children }) => {
   return (
@@ -8,6 +11,7 @@ const MainLayouts = ({ children }) => {
       <Header />
       {children}
       <Footer />
+      <FloatButton icon={<FontAwesomeIcon icon={faWhatsapp} />} />
     </div>
   );
 };
