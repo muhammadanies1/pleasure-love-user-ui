@@ -4,6 +4,7 @@ import Cart from "../pages/carts";
 import ROUTING from "../constants/routing";
 import ProductDetails from "../pages/products/details";
 import Login from "../pages/login";
+import Register from "../pages/register";
 
 const BrowserRoutes = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const BrowserRoutes = createBrowserRouter([
   {
     path:ROUTING.LOGIN,
     element: <Login />
+  },
+  {
+    path:ROUTING.REGISTER,
+    element:<Register />
   }
 ], { basename: "/" });
 

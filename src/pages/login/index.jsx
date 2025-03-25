@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useCallback } from "react";
 import MainLayouts from "../../components/organisms/layouts/main";
 import { Button, Input } from "antd";
+import { useNavigate } from "react-router";
+import ROUTING from "../../constants/routing";
 
 const Login = () => {
+  const navigate = useNavigate();
+
+  const register = useCallback(() => {
+    navigate(ROUTING.REGISTER);
+  }, [navigate]);
+
   return (
     <MainLayouts>
       <div className="min-h-96 flex justify-center items-center">
@@ -17,7 +25,10 @@ const Login = () => {
               Login
             </Button>
             <span>
-              Belum punya akun? <u className="cursor-pointer">Buat disini</u>{" "}
+              Belum punya akun?{" "}
+              <u className="cursor-pointer" onClick={register}>
+                Buat disini
+              </u>{" "}
             </span>
           </div>
         </div>
