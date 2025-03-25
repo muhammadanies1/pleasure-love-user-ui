@@ -1,15 +1,20 @@
 import { Drawer } from "antd";
 import React from "react";
-import useDrawerMenu from "../../../../stores/useDrawerMenu";
+import useDrawerCart from "../../../../stores/useDrawerCart";
 
-const DrawerMenu = () => {
-  const { close, isDrawerMenuOpen } = useDrawerMenu();
-
+const DrawerCart = () => {
+  const { isDrawerCartOpen, close } = useDrawerCart();
   return (
-    <Drawer placement="left" open={isDrawerMenuOpen} onClose={close}>
-      <p className="text-white">Menuus</p>
+    <Drawer
+      title="Your Cart"
+      placement={"right"}
+      closable={false}
+      onClose={close}
+      open={isDrawerCartOpen}
+    >
+      <p>Your Cart is empty</p>
     </Drawer>
   );
 };
 
-export default DrawerMenu;
+export default DrawerCart;
