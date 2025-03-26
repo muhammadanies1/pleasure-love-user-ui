@@ -5,6 +5,8 @@ import ROUTING from "../constants/routing";
 import ProductDetails from "../pages/products/details";
 import Login from "../pages/login";
 import Register from "../pages/register";
+import RingkasanProduk from "../pages/summary/ringkasan-product";
+import Pemabayaran from "../pages/pembayaran";
 
 const BrowserRoutes = createBrowserRouter([
   {
@@ -26,6 +28,14 @@ const BrowserRoutes = createBrowserRouter([
   {
     path:ROUTING.REGISTER,
     element:<Register />
+  },
+  {
+    path:ROUTING.PRODUCTS.RINGKASAN,
+    element:<RingkasanProduk />
+  },
+  {
+    path:ROUTING.PEMBAYARAN,
+    element:<Pemabayaran />
   }
 ], { basename: "/" });
 

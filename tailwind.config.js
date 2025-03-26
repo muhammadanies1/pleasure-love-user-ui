@@ -4,6 +4,9 @@ module.exports = {
   theme: {
     colors:{
       primary:'#afd1d2',
+      red:"#FF0020",
+      pink:"#FB9EF8",
+      green:"#67d448",
     },
     screens:{
       'tablet':'750px',

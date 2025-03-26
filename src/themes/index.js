@@ -6,7 +6,8 @@ const AntdThemesConfig = {
       "colorTextLightSolid": "rgb(3,3,3)"
     },
     "Button": {
-      "colorPrimary": "#afd1d2"
+      "colorPrimary": "#afd1d2",
+      "defaultBorderColor": "#afd1d2"
     },
     
   },
